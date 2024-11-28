@@ -1,0 +1,78 @@
+<section class="min-h-screen flex justify-center items-center p-4">
+  <div class="max-w-4xl w-full  rounded-lg bg-white/10 backdrop-blur-lg shadow-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+
+      <!-- Contact Info Section -->
+      <div class="bg-gradient-to-b from-Navy/100 to-Navy/10 text-white p-4 rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+        <div class="text-white flex flex-col justify-center p-8 md:p-12">
+          <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p class="text-lg mb-6">
+            Have questions or just want to say hello? We're here to help!
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span><span class="font-bold text-yellow-500">Email: </span> 
+                <a href="mailto:{{emailid}}" class="underline">{{ emailid }}</a>
+              </span>
+            </li>
+            <li class="flex items-center">
+              <span><span class="font-bold text-yellow-500">Phone:</span> +91 9639-1532-40</span>
+            </li>
+            <li class="flex items-center">
+              <span><span class="font-bold text-yellow-500">Address:</span> Haridwar, Uttarakhand</span>
+            </li>
+          </ul>
+
+          <!-- Download CV Button -->
+          <div class="flex justify-center p-4 pt-8">
+            <div class="btn h-auto w-1/2 bg-gradient-to-r from-blue-400 to-purple-600 hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-600 text-white">
+              <a href="https://mega.nz/folder/spchRQjQ#sjHV9ZL2MDTKIbCT6JVLyw" target="_blank">Download CV</a>
+            </div>
+          </div>
+          
+          <!-- Back Button (Assuming it's intended to be a navigation button) -->
+          <div class="hidden relative w-6 h-6 text-white rounded-full shadow-lg lg:flex items-center justify-center transform hover:scale-125 transition-transform duration-300 ease-in-out">
+            <a routerLink="/">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="p-8">
+        <div class="font-amsterdam text-2xl lg:text-4xl p-2 text-center text-white mb-6">Contact</div>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+          
+          <!-- Name -->
+          <div class="mb-4">
+            <label for="name" class="block font-medium mb-2 text-white">Name</label>
+            <input type="text" id="name" name="name" ngModel placeholder="Enter your name"
+              class="w-full border rounded-lg p-2 bg-transparent" required />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label for="email" class="block text-white font-medium mb-2">Email</label>
+            <input type="email" id="email" name="email" ngModel placeholder="Enter your email"
+              class="w-full border rounded-lg p-2 bg-transparent" required />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-4">
+            <label for="message" class="block text-white font-medium mb-2">Message</label>
+            <textarea id="message" name="message" ngModel rows="4" placeholder="Enter your message"
+              class="w-full border rounded-lg p-2 bg-transparent" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

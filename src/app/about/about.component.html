@@ -1,0 +1,87 @@
+<div id="about" class="snap-y snap-mandatory flex lg:flex-row-reverse h-screen">
+    <div class="hidden lg:flex justify-end items-end">
+        <img src="about.png" alt="" class="object-contain h-auto w-auto">
+    </div>
+    <div class="w-full lg:w-[80%] h-full lg:h-screen bg-white/10 backdrop-blur-lg shadow-lg  flex flex-row-reverse justify-center items-center">
+        <div class="pl-4 lg:pl-10 space-y-2 pt-20 lg:pt-0">
+            <p class="font-amsterdam text-[1.5em] lg:text-[4em] text-gray-100  ">About me </p>
+            <p class="text-Yellow  text-3xl lg:text-4xl font-semibold">Hello,</p>
+            <p class="text-White text-3xl lg:text-4xl font-semibold">I am Abhishek Rawat</p>
+            <p class="text-xl font-semibold">a Software Developer </p>
+            <p class="text-White text-1xl lg:font-semibold lg:h-1/2 lg:w-4/5 overflow-auto text-wrap p-2 lg:p-0">with a passion for creating
+                innovative solutions and dedicated to my work . My toolkit includes JavaScript, React, Node.js, and Python, along with experience
+                in database management (SQL and MongoDB) and version control (Git). I also enjoy working with Tailwind
+                CSS and Figma to create seamless, responsive UI designs.
+            </p>
+            <div class="hidden lg:flex justify-center items-center gap-8 text-gray-800 absolute pt-4 pl-8">
+                <!-- Back Button with Interactive Sparkle and Modal -->
+                <div class="group relative">
+                    <button
+                        class="relative w-6 h-6 text-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-125 transition-transform duration-300 ease-in-out" routerLink="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform -scale-x-100" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Dots with Interactive Sparkle and Hover Modal -->
+                <div class=" justify-center items-center gap-3 relative hidden lg:flex">
+                    <div class="group relative">
+                        <button
+                            class="relative w-3 h-3 bg-yellow-400/80 backdrop-blur-md rounded-full hover:scale-150 transition-all duration-300 group-hover:ring-4 group-hover:ring-yellow-400" routerLink="/about">
+                            <!-- Sparkle Effect -->
+                            <span
+                                class="absolute w-2 h-2 bg-yellow-300 rounded-full animate-bounce opacity-50 group-hover:animate-ping"></span>
+                        </button>
+                        <!-- Hover Modal -->
+                        <div
+                            class="absolute hidden group-hover:flex justify-center top-[-80px] -left-14 w-20 bg-Navy/80 backdrop-blur-md p-3 rounded-md shadow-xl text-sm text-White z-50 transform scale-95 group-hover:scale-100 transition-all duration-500 ease-in-out" routerLink="/about">
+                            <p >About</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <button
+                            class="relative w-3 h-3 bg-gray-500/60 backdrop-blur-md rounded-full hover:scale-150 transition-all duration-300 group-hover:ring-4 group-hover:ring-gray-500" routerLink="/education">
+                            <!-- Sparkle Effect -->
+                            <span
+                                class="absolute w-2 h-2 bg-gray-300 rounded-full animate-bounce opacity-50 group-hover:animate-ping"></span>
+                        </button>
+                        <!-- Hover Modal -->
+                        <div
+                            class="absolute hidden group-hover:flex justify-center top-[-80px] -left-14 w-40 bg-Navy/80 backdrop-blur-md p-3 rounded-md shadow-xl text-sm text-White z-50 transform scale-95 group-hover:scale-100 transition-all duration-500 ease-in-out">
+                            <p>Education</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <button
+                            class="relative w-3 h-3 bg-gray-500/60 backdrop-blur-md rounded-full hover:scale-150 transition-all duration-300 group-hover:ring-4 group-hover:ring-gray-500" routerLink="/skills">
+                            <!-- Sparkle Effect -->
+                            <span
+                                class="absolute w-2 h-2 bg-gray-300 rounded-full animate-bounce opacity-50 group-hover:animate-ping"></span>
+                        </button>
+                        <!-- Hover Modal -->
+                        <div
+                            class="absolute hidden group-hover:flex justify-center top-[-80px] -left-14 w-40 bg-Navy/80 backdrop-blur-md p-3 rounded-md shadow-xl text-sm text-White z-50 transform scale-95 group-hover:scale-100 transition-all duration-500 ease-in-out">
+                            <p>Skills</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Button with Sparkle, Bounce, and Modal -->
+                <div class="group relative">
+                    <button
+                        class="relative w-6 h-6  text-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-125 transition-transform duration-300 ease-in-out" routerLink="/education">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

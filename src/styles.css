@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Delius&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@font-face {
+  font-family: "Billy Argel";
+  src: url("assets/fonts/Billy\ Argel\ Font___.ttf") format(truetype);
+}
+@font-face {
+  font-family: "Amsterdam";
+  src: url("assets/fonts/Amsterdam\ Personal\ Use.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* animations */
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease-in-out;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
